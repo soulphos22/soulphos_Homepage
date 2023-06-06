@@ -1,5 +1,11 @@
-import React from 'react';
+import { Box } from '@mui/material';
+
+import Banner from '../components/homepage/Banner';
 
 export default function HomePage() {
-  return <div>HomePage</div>;
+  return (
+    <Box sx={{ height: '100vh' }}>
+      <Banner />
+    </Box>
+  );
 }
