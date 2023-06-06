@@ -2,6 +2,7 @@ import { Box, Button, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 import iconLogo from '../assets/images/logo.png';
+import COLOR from '../assets/styles/colors';
 
 export default function Header() {
   return (
@@ -16,11 +17,6 @@ export default function Header() {
       >
         <Link to="/">
           <img src={iconLogo} alt="logo" />
-        </Link>
-        <Link to="/" style={textStyle}>
-          <Typography variant="p" sx={textSemiBold}>
-            기업 소개
-          </Typography>
         </Link>
       </Box>
       <Box
@@ -52,7 +48,7 @@ const headerContainer = {
   height: '100%',
   position: 'sticky',
   top: 0,
-  backgroundColor: '#ffffff',
+  backgroundColor: COLOR.white,
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
@@ -61,9 +57,12 @@ const headerContainer = {
 
 const textStyle = {
   textDecoration: 'none',
-  color: '#000000',
+  color: COLOR.black,
 };
 
 const textSemiBold = {
   fontWeight: '600',
+  '&:hover': {
+    color: COLOR.blue,
+  },
 };
