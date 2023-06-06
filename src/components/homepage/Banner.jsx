@@ -4,7 +4,7 @@ import backImg from '../../assets/images/backimg.png';
 
 export default function Banner() {
   return (
-    <Box sx={{ height: '80%' }}>
+    <Box>
       <Box sx={backGorundImage}>
         <Typography variant="h1">P I P S</Typography>
         <Typography variant="h4">
@@ -27,6 +27,7 @@ export default function Banner() {
 const backGorundImage = {
   width: '100%',
   height: '100%',
+  minHeight: 'calc(92vh - 60px)',
   position: 'abolute',
   top: 0,
   left: 0,
