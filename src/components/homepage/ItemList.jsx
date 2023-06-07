@@ -4,6 +4,7 @@ import COLOR from '../../assets/styles/colors';
 
 export default function ItemList({ textObj }) {
   const { mainText, subText, subText2, subText3, image } = textObj;
+
   return (
     <Box
       sx={{
@@ -14,6 +15,10 @@ export default function ItemList({ textObj }) {
         alignItems: 'center',
         margin: '0 auto',
         padding: '1.5rem 1rem',
+        '@media (max-width: 950px)': {
+          flexDirection: 'column-reverse',
+          gap: '1rem',
+        },
       }}
     >
       <Box
@@ -23,9 +28,22 @@ export default function ItemList({ textObj }) {
           flexDirection: 'column',
           justifyContent: 'center',
           gap: '1rem',
+          '@media (max-width: 950px)': {
+            width: '100%',
+            textAlign: 'center',
+          },
         }}
       >
-        <Typography variant="p" sx={{ fontSize: '2.5rem', color: COLOR.blue }}>
+        <Typography
+          variant="p"
+          sx={{
+            fontSize: '2.3rem',
+            color: COLOR.blue,
+            '@media (max-width: 950px)': {
+              fontSize: '1.5rem',
+            },
+          }}
+        >
           {mainText}
         </Typography>
         <Typography variant="p" sx={descFont}>
@@ -47,6 +65,10 @@ export default function ItemList({ textObj }) {
             height: 'auto',
             maxWidth: '400px',
             maxHeight: '400px',
+            '@media (max-width: 950px)': {
+              maxWidth: '300px',
+              maxHeight: '300px',
+            },
           }}
         />
       </Box>
@@ -57,4 +79,7 @@ export default function ItemList({ textObj }) {
 const descFont = {
   fontSize: '1.2rem',
   fontWeight: 'lighter',
+  '@media (max-width: 950px)': {
+    fontSize: '1rem',
+  },
 };

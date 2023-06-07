@@ -18,7 +18,7 @@ export default function FaqLink() {
           gap: '1rem',
         }}
       >
-        <Typography variant="h4">
+        <Typography variant="p" sx={{ fontSize: '1.7rem' }}>
           문제가 발생했거나 궁금한 점이 있으신가요?
         </Typography>
         <Typography variant="p" sx={{ fontWeight: 'lighter' }}>

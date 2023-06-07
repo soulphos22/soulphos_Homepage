@@ -6,6 +6,7 @@ export default function DownloadHeader() {
   return (
     <Box
       sx={{
+        width: '100%',
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
@@ -13,7 +14,16 @@ export default function DownloadHeader() {
         paddingBottom: '2rem',
       }}
     >
-      <Typography variant="h4" sx={{ fontWeight: '500' }}>
+      <Typography
+        variant="h4"
+        sx={{
+          fontWeight: '500',
+          '@media (max-width: 950px)': {
+            width: '100%',
+            textAlign: 'center',
+          },
+        }}
+      >
         무료 내려받기
       </Typography>
       <Box
@@ -23,6 +33,9 @@ export default function DownloadHeader() {
           textAlign: 'end',
           gap: '0.5rem',
           fontWeight: 'lighter',
+          '@media (max-width: 950px)': {
+            display: 'none',
+          },
         }}
       >
         <Typography variant="p">
