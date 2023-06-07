@@ -181,6 +181,47 @@ export default function AboutPage() {
           </Box>
         </Box>
       </Box>
+      <Box
+        sx={{
+          width: '1200px',
+          height: '400px',
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+        }}
+      >
+        <Box>
+          <Typography sx={{ p: '30px 0px', fontWeight: 700, fontSize: '2rem' }}>
+            제보 및 신고
+          </Typography>
+          <Typography sx={{ fontWeight: 400, fontSize: '1.125rem', mb: 4 }}>
+            신종 및 변종 또는 제거되지 않는 악성코드가 존재하거나 사용 중 버그
+            또는 오진이 발생하면 아래 전자우편주소를 통해 바로 알려주세요.
+          </Typography>
+          <Box
+            sx={{
+              width: '1200px',
+              border: '1px solid #000000',
+              p: '25px 0px',
+              borderRadius: '8px',
+              textAlign: 'center',
+            }}
+          >
+            <Typography sx={{ fontSize: '1.125rem' }}>
+              <strong>이메일 : </strong>
+              <a
+                href="mailto:test123@gmail.com"
+                style={{
+                  color: '#000000',
+                  textDecoration: 'none',
+                }}
+              >
+                test123@gmail.com
+              </a>
+            </Typography>
+          </Box>
+        </Box>
+      </Box>
     </Box>
   );
 }
