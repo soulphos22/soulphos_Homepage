@@ -105,6 +105,12 @@ export default function AboutPage() {
             gridTemplateColumns: 'repeat(3, 1fr)',
             placeItems: 'center',
             gap: 5,
+            '@media screen and (max-width: 1200px)': {
+              gridTemplateColumns: 'repeat(2, 1fr)',
+            },
+            '@media screen and (max-width: 950px)': {
+              gridTemplateColumns: 'repeat(1, 1fr)',
+            },
           }}
         >
           <Box sx={{ textAlign: 'center' }}>
