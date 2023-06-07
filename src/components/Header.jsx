@@ -26,19 +26,7 @@ export default function Header() {
       link: '/about',
       items: () => {
         return (
-          <ul
-            style={{
-              position: 'absolute',
-              top: '1.6rem',
-              right: '5.7rem',
-              textAlign: 'center',
-              backgroundColor: COLOR.white,
-              borderRadius: '0.5rem',
-              paddingLeft: '0.5rem',
-              paddingRight: '0.5rem',
-              width: '10rem',
-            }}
-          >
+          <ul style={subMenuStyle}>
             {subMenuItems.map((item) => (
               <Box key={item.name}>
                 <li style={menuListStyle}>
@@ -56,7 +44,7 @@ export default function Header() {
     },
     {
       name: '지원',
-      link: '/',
+      link: '/faq',
     },
   ];
 
@@ -86,23 +74,31 @@ export default function Header() {
       <Box
         sx={{
           display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
+          flexDirection: 'row',
           gap: '1.5rem',
+          justifyContent: 'flex-end',
+          alignItems: 'center',
         }}
       >
         {menuItems.map((item) => (
           <Box
             key={item.name}
+            sx={{
+              height: '4.2rem',
+              display: 'flex',
+              alignItems: 'center',
+            }}
             onMouseOver={item.name === '소개' ? handleMouseOver : null}
             onMouseLeave={item.name === '소개' ? handleMouseLeave : null}
           >
-            <Link to={item.link} style={textStyle}>
-              <Typography variant="p" sx={textSemiBold}>
-                {item.name}
-              </Typography>
-            </Link>
-            {item.items && isMouseOver && item.items()}
+            <Box>
+              <Link to={item.link} style={textStyle}>
+                <Typography variant="p" sx={textSemiBold}>
+                  {item.name}
+                </Typography>
+              </Link>
+              {item.items && isMouseOver && item.items()}
+            </Box>
           </Box>
         ))}
         <Button
@@ -126,8 +122,22 @@ const headerContainer = {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
-  borderBottom: '1px solid #eee',
+  borderBottom: `1px solid ${COLOR.borderColor}`,
   zIndex: 100,
+};
+
+const subMenuStyle = {
+  position: 'absolute',
+  top: '3.2rem',
+  right: '5.7rem',
+  textAlign: 'center',
+  backgroundColor: COLOR.white,
+  borderTop: `1px solid ${COLOR.borderColor}`,
+  borderRadius: '0 0 0.5rem 0.5rem',
+  paddingLeft: '0.5rem',
+  paddingRight: '0.5rem',
+  width: '10rem',
+  boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
 };
 
 const textStyle = {
