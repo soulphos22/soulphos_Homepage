@@ -1,5 +1,7 @@
 import { Box, Typography } from '@mui/material';
 
+import COLOR from '../assets/styles/colors';
+
 export default function Footer() {
   return (
     <Box
@@ -7,7 +9,7 @@ export default function Footer() {
         width: '100%',
         display: 'flex',
         flexDirection: 'column',
-        borderTop: '1px solid #eee',
+        borderTop: `1px solid ${COLOR.borderColor}`,
         padding: '1.7rem',
         position: 'absolute',
         bottom: 0,
