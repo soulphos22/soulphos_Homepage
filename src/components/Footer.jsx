@@ -4,10 +4,13 @@ export default function Footer() {
   return (
     <Box
       sx={{
+        width: '100%',
         display: 'flex',
         flexDirection: 'column',
         borderTop: '1px solid #eee',
-        padding: '1rem',
+        padding: '1.7rem',
+        position: 'absolute',
+        bottom: 0,
       }}
     >
       <Typography variant="p">(주) 솔포스</Typography>
