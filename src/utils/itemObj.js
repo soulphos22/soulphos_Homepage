@@ -1,3 +1,5 @@
+import testImage from '../assets/images/backimg.png';
+
 export const itemObj = [
   {
     id: 1,
@@ -8,7 +10,7 @@ export const itemObj = [
       '걱정 마세요! 멀웨어 제로를 사용하시면 효과적으로 악성 광고 창을 제거할 수 있습니다.',
     subText3:
       '광고 창 없는 청정한 환경을 유지시키기 위해 저희는 계속 노력하고 있습니다.',
-    image: '',
+    image: testImage,
   },
   {
     id: 2,
@@ -19,7 +21,7 @@ export const itemObj = [
       '사용 중인 안티바이러스 제품으로 해결되지 않을 경우 수동 치료 도구로 사용하실 수 있습니다.',
     subText3:
       '멀웨어 제로로 악성코드에 감염된 컴퓨터를 치료해 문제를 해결해보세요.',
-    image: '',
+    image: testImage,
   },
   {
     id: 3,
@@ -30,6 +32,30 @@ export const itemObj = [
       '아니면 광고 창 또는 악성코드 문제는 해결하였으나 관련 찌꺼기가 남아있어 찝찝한가요?',
     subText3:
       '멀웨어 제로 단 한 번의 사용으로 묵은 찌꺼기를 효과적으로 정리할 수 있습니다.',
+    image: testImage,
+  },
+];
+
+export const faqObj = [
+  {
+    panelId: 'panel1',
+    question: 'Q. 문제가 발생했거나 궁금한 점이 있으신가요?',
+    answer:
+      "예기치 않은 문제가 발생했거나 다른 궁금한 점이 있으시면 '자주 묻는 질문' 페이지를 방문해 내용을 확인해주세요.",
+    image: '',
+  },
+  {
+    panelId: 'panel2',
+    question: 'Q. 문제가 해결되지 않으셨나요?',
+    answer:
+      '문제가 해결되지 않으셨다면 고객센터로 문의해주세요. 고객센터는 24시간 운영되며, 최대한 빠르게 답변해드리겠습니다.',
+    image: testImage,
+  },
+  {
+    panelId: 'panel3',
+    question: 'Q. 멀웨어 제로를 사용해주셔서 감사합니다.',
+    answer:
+      '멀웨어 제로를 사용해주셔서 감사합니다. 멀웨어 제로는 사용자의 편의를 위해 노력하고 있습니다.',
     image: '',
   },
 ];
