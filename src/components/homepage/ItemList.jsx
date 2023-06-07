@@ -1,6 +1,5 @@
 import { Box, Typography } from '@mui/material';
 
-import testImage from '../../assets/images/backimg.png';
 import COLOR from '../../assets/styles/colors';
 
 export default function ItemList({ textObj }) {
@@ -41,7 +40,7 @@ export default function ItemList({ textObj }) {
       </Box>
       <Box>
         <img
-          src={testImage}
+          src={image}
           alt="test"
           style={{
             width: '100%',

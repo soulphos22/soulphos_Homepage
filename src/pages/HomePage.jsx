@@ -3,7 +3,7 @@ import { itemObj } from '../utils/itemObj';
 
 import Banner from '../components/homepage/Banner';
 import ItemList from '../components/homepage/ItemList';
-import QnaLink from '../components/homepage/QnaLink';
+import FaqLink from '../components/homepage/FaqLink';
 import Report from '../components/homepage/Report';
 
 export default function HomePage() {
@@ -17,7 +17,7 @@ export default function HomePage() {
           <ItemList key={item.id} textObj={item} />
         ))}
       </Box>
-      <QnaLink />
+      <FaqLink />
       <Report />
     </Box>
   );
