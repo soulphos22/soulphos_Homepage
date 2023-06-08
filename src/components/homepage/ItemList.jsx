@@ -1,48 +1,37 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, useMediaQuery } from '@mui/material';
 
 import COLOR from '../../assets/styles/colors';
 
 export default function ItemList({ textObj }) {
   const { mainText, subText, subText2, subText3, image } = textObj;
+  const isSmallSize = useMediaQuery('(max-width:950px)');
 
   return (
     <Box
-      sx={{
-        maxWidth: '1280px',
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        margin: '0 auto',
-        padding: '1.5rem 1rem',
-        '@media (max-width: 950px)': {
-          flexDirection: 'column-reverse',
-          gap: '1rem',
-        },
-      }}
+      sx={
+        !isSmallSize
+          ? itemListContainer
+          : {
+              ...itemListContainer,
+              flexDirection: 'column-reverse',
+              gap: '1rem',
+            }
+      }
     >
       <Box
-        sx={{
-          width: '75%',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          gap: '1rem',
-          '@media (max-width: 950px)': {
-            width: '100%',
-            textAlign: 'center',
-          },
-        }}
+        sx={
+          !isSmallSize
+            ? itemListTextBox
+            : { ...itemListTextBox, width: '100%', textAlign: 'center' }
+        }
       >
         <Typography
           variant="p"
-          sx={{
-            fontSize: '2.3rem',
-            color: COLOR.blue,
-            '@media (max-width: 950px)': {
-              fontSize: '1.5rem',
-            },
-          }}
+          sx={
+            !isSmallSize
+              ? itemListTextStyle
+              : { ...itemListTextStyle, fontSize: '1.5rem' }
+          }
         >
           {mainText}
         </Typography>
@@ -60,16 +49,11 @@ export default function ItemList({ textObj }) {
         <img
           src={image}
           alt="test"
-          style={{
-            width: '100%',
-            height: 'auto',
-            maxWidth: '400px',
-            maxHeight: '400px',
-            '@media (max-width: 950px)': {
-              maxWidth: '300px',
-              maxHeight: '300px',
-            },
-          }}
+          style={
+            !isSmallSize
+              ? itemListImageStyle
+              : { ...itemListImageStyle, maxWidth: '300px', maxHeight: '300px' }
+          }
         />
       </Box>
     </Box>
@@ -82,4 +66,34 @@ const descFont = {
   '@media (max-width: 950px)': {
     fontSize: '1rem',
   },
+};
+
+const itemListContainer = {
+  maxWidth: '1280px',
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  margin: '0 auto',
+  padding: '1.5rem 1rem',
+};
+
+const itemListTextBox = {
+  width: '75%',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  gap: '1rem',
+};
+
+const itemListTextStyle = {
+  fontSize: '2.3rem',
+  color: COLOR.blue,
+};
+
+const itemListImageStyle = {
+  width: '100%',
+  height: 'auto',
+  maxWidth: '400px',
+  maxHeight: '400px',
 };
