@@ -146,7 +146,7 @@ const textStyle = {
 };
 
 const textSemiBold = {
-  fontWeight: '600',
+  fontWeight: '500',
   '&:hover': {
     color: COLOR.blue,
   },
