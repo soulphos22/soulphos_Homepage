@@ -1,30 +1,49 @@
 import { Box, Divider, Typography } from '@mui/material';
 import testImage from '../assets/images/backimg.png';
 
+import COLOR from '../assets/styles/colors';
+
 export default function AboutPage() {
   return (
     <Box
       sx={{
-        width: '100%',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
+        maxWidth: '1200px',
+        margin: '0 auto',
+        paddingTop: '3rem',
       }}
     >
       <Box>
         <Box
           sx={{
-            width: '1200px',
-            height: '148px',
+            width: '100%',
             display: 'flex',
+            flexDirection: 'row',
             justifyContent: 'space-between',
-            alignItems: 'center',
+            borderBottom: `1px solid ${COLOR.borderColor}`,
+            paddingBottom: '2rem',
           }}
         >
-          <Typography sx={{ fontWeight: 700, fontSize: '2.2rem', mt: '-5px' }}>
+          <Typography
+            sx={{
+              fontWeight: 700,
+              fontSize: '2.2rem',
+              mt: '-5px',
+              '@media (max-width: 950px)': {
+                width: '100%',
+                textAlign: 'center',
+              },
+            }}
+          >
             소개
           </Typography>
-          <Box sx={{ lineHeight: 1.5 }}>
+          <Box
+            sx={{
+              lineHeight: 1.5,
+              '@media (max-width: 950px)': {
+                display: 'none',
+              },
+            }}
+          >
             <Typography sx={{ color: '#757575' }}>
               멀웨어 제로 악성코드 제거 도구를 소개합니다.
             </Typography>
@@ -35,7 +54,7 @@ export default function AboutPage() {
           </Box>
         </Box>
         <Divider />
-        <Box sx={{ width: '1200px', height: '521px' }}>
+        <Box sx={{ width: '100%' }}>
           <Typography
             sx={{
               fontSize: '2.2rem',
@@ -45,13 +64,20 @@ export default function AboutPage() {
           >
             멀웨어 제로 ( Malware Zero )
           </Typography>
-          <Box sx={{ pb: '30px' }}>
+          <Box sx={{ width: '88%', pb: '30px' }}>
             <Typography sx={{ fontSize: '1.125rem' }}>
               <span style={{ color: '#ff3c00' }}>멀웨어 제로</span>는 사용자의
               컴퓨터가 이미 악성코드에 감염되었을 때 유용하게 사용할 수 있는
               비설치 스크립트 형식의 보조 악성코드 제거 도구입니다.
             </Typography>
-            <Divider sx={{ mt: 1 }} />
+            <Divider
+              sx={{
+                mt: 1,
+                '@media (max-width: 950px)': {
+                  display: 'none',
+                },
+              }}
+            />
           </Box>
           <Box>
             <Box sx={{ color: '#757575', lineHeight: 2 }}>
