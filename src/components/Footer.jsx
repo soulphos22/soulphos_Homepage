@@ -10,7 +10,7 @@ export default function Footer() {
         display: 'flex',
         flexDirection: 'column',
         borderTop: `1px solid ${COLOR.borderColor}`,
-        padding: '1.7rem',
+        padding: '1.35rem',
         position: 'absolute',
         bottom: 0,
       }}

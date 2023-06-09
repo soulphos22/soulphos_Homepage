@@ -44,7 +44,7 @@ export default function DownloadPage() {
       sx={{
         maxWidth: '1280px',
         margin: '0 auto',
-        paddingTop: '2rem',
+        paddingTop: '3rem',
       }}
     >
       <DownloadHeader />
