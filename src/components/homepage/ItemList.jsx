@@ -83,12 +83,13 @@ const itemListTextBox = {
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
-  gap: '1rem',
+  gap: '0.7rem',
 };
 
 const itemListTextStyle = {
   fontSize: '2.3rem',
   color: COLOR.blue,
+  marginBottom: '0.7rem',
 };
 
 const itemListImageStyle = {

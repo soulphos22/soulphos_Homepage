@@ -5,6 +5,8 @@ import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 
+import COLOR from '../../assets/styles/colors';
+
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
@@ -28,6 +30,9 @@ const AccordionSummary = styled((props) => (
       ? 'rgba(255, 255, 255, .05)'
       : 'rgba(0, 0, 0, .03)',
   flexDirection: 'row-reverse',
+  '&.Mui-expanded': {
+    backgroundColor: COLOR.blue,
+  },
   '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
     transform: 'rotate(90deg)',
   },

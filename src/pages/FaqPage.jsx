@@ -6,7 +6,7 @@ import FaqItem from '../components/faqpage/FaqItem';
 import Report from '../components/homepage/Report';
 
 export default function FaqPage() {
-  const [expanded, setExpanded] = useState('panel1');
+  const [expanded, setExpanded] = useState('');
 
   const handleChange = (panel) => (_, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
