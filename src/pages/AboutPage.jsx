@@ -5,14 +5,8 @@ import COLOR from '../assets/styles/colors';
 
 export default function AboutPage() {
   return (
-    <Box
-      sx={{
-        maxWidth: '1200px',
-        margin: '0 auto',
-        paddingTop: '3rem',
-      }}
-    >
-      <Box>
+    <Box>
+      <Box sx={{ maxWidth: '1200px', margin: '0 auto', paddingTop: '3rem' }}>
         <Box
           sx={{
             width: '100%',
@@ -116,17 +110,17 @@ export default function AboutPage() {
       </Box>
       <Box
         sx={{
-          width: '100%',
           background: '#fafafa',
           height: '',
           display: 'flex',
           justifyContent: 'center',
           p: '40px 0px 40px 0px',
+          marginTop: '4rem',
         }}
       >
         <Box
           sx={{
-            width: '1200px',
+            maxWidth: '1200px',
             display: 'grid',
             gridTemplateColumns: 'repeat(3, 1fr)',
             placeItems: 'center',
@@ -215,7 +209,9 @@ export default function AboutPage() {
       </Box>
       <Box
         sx={{
-          width: '1200px',
+          maxWidth: '1200px',
+          margin: '0 auto',
+          paddingTop: '3rem',
           height: '400px',
           display: 'flex',
           justifyContent: 'space-between',
@@ -224,11 +220,10 @@ export default function AboutPage() {
       >
         <Box>
           <Typography sx={{ p: '30px 0px', fontWeight: 700, fontSize: '2rem' }}>
-            제보 및 신고
+            연락처
           </Typography>
           <Typography sx={{ fontWeight: 400, fontSize: '1.125rem', mb: 4 }}>
-            신종 및 변종 또는 제거되지 않는 악성코드가 존재하거나 사용 중 버그
-            또는 오진이 발생하면 아래 전자우편주소를 통해 바로 알려주세요.
+            궁금한 점이 있으신가요? 언제든지 연락주세요.
           </Typography>
           <Box
             sx={{
@@ -239,16 +234,17 @@ export default function AboutPage() {
               textAlign: 'center',
             }}
           >
-            <Typography sx={{ fontSize: '1.125rem' }}>
-              <strong>이메일 : </strong>
+            <Typography sx={{ fontSize: '1.7rem' }}>
+              <strong>전화번호 : </strong>
               <a
-                href="mailto:test123@gmail.com"
+                href="tel:010-1234-5678"
                 style={{
                   color: '#000000',
+                  fontSize: '1.7rem',
                   textDecoration: 'none',
                 }}
               >
-                test123@gmail.com
+                010-1234-5678
               </a>
             </Typography>
           </Box>
