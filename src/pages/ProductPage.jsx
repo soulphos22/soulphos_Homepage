@@ -2,6 +2,7 @@ import { Box, Divider, Typography } from '@mui/material';
 
 import COLOR from '../assets/styles/colors';
 import TextCard from '../components/productpage/TextCard';
+import { productObj } from '../utils/itemObj';
 
 export default function ProductPage() {
   return (
@@ -139,12 +140,9 @@ export default function ProductPage() {
             },
           }}
         >
-          <TextCard />
-          <TextCard />
-          <TextCard />
-          <TextCard />
-          <TextCard />
-          <TextCard />
+          {productObj.map((item) => (
+            <TextCard key={item.id} prodcutObj={item} />
+          ))}
         </Box>
       </Box>
       <Box
@@ -173,12 +171,13 @@ export default function ProductPage() {
               textAlign: 'center',
             }}
           >
-            <Typography sx={{ fontSize: '1.125rem' }}>
+            <Typography sx={{ fontSize: '1.7rem' }}>
               <strong>이메일 : </strong>
               <a
                 href="mailto:test123@gmail.com"
                 style={{
                   color: '#000000',
+                  fontSize: '1.7rem',
                   textDecoration: 'none',
                 }}
               >

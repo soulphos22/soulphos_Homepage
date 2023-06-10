@@ -1,4 +1,10 @@
+// Homepage Image Import
 import testImage from '../assets/images/backimg.png';
+
+// FAQ Image Import
+
+// Product Image Import
+import backRemoveImage from '../assets/images/backimg_removebg.png';
 
 export const itemObj = [
   {
@@ -57,5 +63,62 @@ export const faqObj = [
     answer:
       '멀웨어 제로를 사용해주셔서 감사합니다. 멀웨어 제로는 사용자의 편의를 위해 노력하고 있습니다.',
     image: '',
+  },
+];
+
+export const productObj = [
+  {
+    id: 1,
+    imageText: '광고 프로그램 제거',
+    hoverText: '광고 프로그램 제거',
+    hoverSubText: '사용자의 의도와는 관계 없이 무분별한 방식으로',
+    hoverSubText2: '광고를 띄우는 프로그램을 제거합니다.',
+    hoverSubText3: '프로그램을 효과적으로 제거합니다.',
+    image: backRemoveImage,
+  },
+  {
+    id: 2,
+    imageText: '광고 프로그램 제거',
+    hoverText: '광고 프로그램 제거',
+    hoverSubText: '사용자의 의도와는 관계 없이 무분별한 방식으로',
+    hoverSubText2: '광고를 띄우는 프로그램을 제거합니다.',
+    hoverSubText3: '프로그램을 효과적으로 제거합니다.',
+    image: backRemoveImage,
+  },
+  {
+    id: 3,
+    imageText: '광고 프로그램 제거',
+    hoverText: '광고 프로그램 제거',
+    hoverSubText: '사용자의 의도와는 관계 없이 무분별한 방식으로',
+    hoverSubText2: '광고를 띄우는 프로그램을 제거합니다.',
+    hoverSubText3: '프로그램을 효과적으로 제거합니다.',
+    image: backRemoveImage,
+  },
+  {
+    id: 4,
+    imageText: '광고 프로그램 제거',
+    hoverText: '광고 프로그램 제거',
+    hoverSubText: '사용자의 의도와는 관계 없이 무분별한 방식으로',
+    hoverSubText2: '광고를 띄우는 프로그램을 제거합니다.',
+    hoverSubText3: '프로그램을 효과적으로 제거합니다.',
+    image: backRemoveImage,
+  },
+  {
+    id: 5,
+    imageText: '광고 프로그램 제거',
+    hoverText: '광고 프로그램 제거',
+    hoverSubText: '사용자의 의도와는 관계 없이 무분별한 방식으로',
+    hoverSubText2: '광고를 띄우는 프로그램을 제거합니다.',
+    hoverSubText3: '프로그램을 효과적으로 제거합니다.',
+    image: backRemoveImage,
+  },
+  {
+    id: 6,
+    imageText: '광고 프로그램 제거',
+    hoverText: '광고 프로그램 제거',
+    hoverSubText: '사용자의 의도와는 관계 없이 무분별한 방식으로',
+    hoverSubText2: '광고를 띄우는 프로그램을 제거합니다.',
+    hoverSubText3: '프로그램을 효과적으로 제거합니다.',
+    image: backRemoveImage,
   },
 ];

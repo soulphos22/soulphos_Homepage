@@ -1,10 +1,17 @@
 import { useState } from 'react';
 import { Box, Card, CardMedia, Typography } from '@mui/material';
 
-import backRemoveImage from '../../assets/images/backimg_removebg.png';
 import COLOR from '../../assets/styles/colors';
 
-export default function TextCard() {
+export default function TextCard({ prodcutObj }) {
+  const {
+    imageText,
+    hoverText,
+    hoverSubText,
+    hoverSubText2,
+    hoverSubText3,
+    image,
+  } = prodcutObj;
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseOver = () => {
@@ -37,8 +44,8 @@ export default function TextCard() {
             transition: 'all 0.3s ease',
           }}
           component="img"
-          image={backRemoveImage}
-          alt="testImage"
+          image={image}
+          alt={imageText}
         />
         {!isHovered ? (
           <Box
@@ -77,20 +84,20 @@ export default function TextCard() {
             <Typography
               sx={{ fontSize: '1.5rem', fontWeight: 600, mb: 2, mt: 1 }}
             >
-              광고 프로그램 제거
+              {hoverText}
             </Typography>
-            <Typography sx={{ fontSize: '1.175rem', fontWeight: 400, mt: 1 }}>
-              사용자의 의도와는 관계 없이 무분별한 방식으로
-            </Typography>
-            <Typography sx={{ fontSize: '1.175rem', fontWeight: 400, mt: 1 }}>
-              광고 창을 띄우는 툴바를 포함한 악의적인 광고
-            </Typography>
-            <Typography sx={{ fontSize: '1.175rem', fontWeight: 400, mt: 1 }}>
-              프로그램을 효과적으로 제거합니다.
-            </Typography>
+            <Typography sx={HoverSubTextStyle}>{hoverSubText}</Typography>
+            <Typography sx={HoverSubTextStyle}>{hoverSubText2}</Typography>
+            <Typography sx={HoverSubTextStyle}>{hoverSubText3}</Typography>
           </Box>
         )}
       </Box>
     </Card>
   );
 }
+
+const HoverSubTextStyle = {
+  fontSize: '1.175rem',
+  fontWeight: 400,
+  mt: 1,
+};
