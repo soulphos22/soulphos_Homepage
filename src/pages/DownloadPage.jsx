@@ -26,17 +26,28 @@ export default function DownloadPage() {
   }, [count]);
 
   const downloadFile = () => {
-    const fileName = 'textTextFile.txt';
-    const fileUrl = require('../assets/test_download.txt');
+    const fileName = 'download.zip';
+    const fileUrl = require('../assets/test.zip');
 
-    const blob = new Blob([fileUrl], { type: 'text/plain' });
+    fetch(fileUrl)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Failed to download file');
+        }
+        return response.blob();
+      })
+      .then((blob) => {
+        const blobUrl = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = blobUrl;
+        a.download = fileName;
+        a.click();
 
-    const link = document.createElement('a');
-    link.href = window.URL.createObjectURL(blob);
-    link.setAttribute('download', fileName);
-    link.click();
-
-    window.URL.revokeObjectURL(link.href);
+        window.URL.revokeObjectURL(blobUrl);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   };
 
   return (
