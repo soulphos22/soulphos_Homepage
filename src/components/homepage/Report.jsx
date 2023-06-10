@@ -27,6 +27,9 @@ export default function Report() {
             p: '25px 0px',
             borderRadius: '8px',
             textAlign: 'center',
+            '@media (max-width: 950px)': {
+              width: '100%',
+            },
           }}
         >
           <Typography variant="h5" sx={{ fontWeight: 'lighter' }}>
