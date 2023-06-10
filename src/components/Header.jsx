@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Box, Button, Typography } from '@mui/material';
 import { Link, useNavigate } from 'react-router-dom';
 
-import iconLogo from '../assets/images/logo.png';
+import iconLogo from '../assets/images/soulphoslogo.jpg';
 import COLOR from '../assets/styles/colors';
 
 export default function Header() {
@@ -11,19 +11,19 @@ export default function Header() {
 
   const subMenuItems = [
     {
-      name: '기업 소개',
-      link: '/about',
-    },
-    {
       name: '제품 소개',
       link: '/product',
+    },
+    {
+      name: '기업 소개',
+      link: '/about',
     },
   ];
 
   const menuItems = [
     {
       name: '소개',
-      link: '/about',
+      link: '/product',
       items: () => {
         return (
           <ul style={subMenuStyle}>
@@ -68,14 +68,22 @@ export default function Header() {
         }}
       >
         <Link to="/" alt="home">
-          <img src={iconLogo} alt="logo" />
+          <img
+            src={iconLogo}
+            alt="logo"
+            style={{
+              width: '6rem',
+              height: '4rem',
+              padding: '0.5rem 0.5rem 0rem 0.5rem',
+            }}
+          />
         </Link>
       </Box>
       <Box
         sx={{
           display: 'flex',
           flexDirection: 'row',
-          gap: '1.5rem',
+          gap: '1rem',
           justifyContent: 'flex-end',
           alignItems: 'center',
         }}
@@ -84,9 +92,11 @@ export default function Header() {
           <Box
             key={item.name}
             sx={{
-              height: '4.2rem',
+              width: '3em',
+              height: '4.75em',
               display: 'flex',
               alignItems: 'center',
+              justifyContent: 'center',
             }}
             onMouseOver={item.name === '소개' ? handleMouseOver : null}
             onMouseLeave={item.name === '소개' ? handleMouseLeave : null}
@@ -103,7 +113,13 @@ export default function Header() {
         ))}
         <Button
           variant="outlined"
-          sx={{ marginRight: '1rem' }}
+          sx={{
+            marginRight: '1rem',
+            '&:hover': {
+              backgroundColor: COLOR.blue,
+              color: COLOR.white,
+            },
+          }}
           onClick={() => navigate('/download')}
         >
           다운로드
@@ -128,7 +144,7 @@ const headerContainer = {
 
 const subMenuStyle = {
   position: 'absolute',
-  top: '3.2rem',
+  top: '3.8rem',
   right: '5.7rem',
   textAlign: 'center',
   backgroundColor: COLOR.white,
@@ -147,6 +163,7 @@ const textStyle = {
 
 const textSemiBold = {
   fontWeight: '500',
+  fontSize: '1.1rem',
   '&:hover': {
     color: COLOR.blue,
   },

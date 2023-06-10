@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { Box, Button, Typography } from '@mui/material';
 
 import backImg from '../../assets/images/backimg.png';
+import COLOR from '../../assets/styles/colors';
 
 export default function Banner() {
   const navigate = useNavigate();
@@ -21,7 +22,24 @@ export default function Banner() {
             간단한 소개 문구가 들어가는 자리 두번째 줄
           </Typography>
         </Box>
-        <Button variant="contained" onClick={() => navigate('/download')}>
+        <Button
+          variant="outlined"
+          sx={{
+            width: '15rem',
+            height: '4rem',
+            backgroundColor: 'rgba(0,0,0,0.3)',
+            color: COLOR.white,
+            borderRadius: '1.7rem',
+            fontSize: '1.2rem',
+            fontWeight: 'bold',
+            borderWidth: '3px',
+            '&:hover': {
+              backgroundColor: COLOR.blue,
+              color: COLOR.white,
+            },
+          }}
+          onClick={() => navigate('/download')}
+        >
           다운로드 페이지 이동
         </Button>
       </Box>
