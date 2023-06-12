@@ -156,11 +156,11 @@ export default function ProductPage() {
       >
         <Box>
           <Typography sx={{ p: '30px 0px', fontWeight: 700, fontSize: '2rem' }}>
-            제보 및 신고
+            문의사항
           </Typography>
           <Typography sx={{ fontWeight: 400, fontSize: '1.125rem', mb: 4 }}>
-            신종 및 변종 또는 제거되지 않는 악성코드가 존재하거나 사용 중 버그
-            또는 오진이 발생하면 아래 전자우편주소를 통해 바로 알려주세요.
+            사용 중 버그가 발생하거나 “자주 묻는 질문”에서 해결하지 못한 문제가
+            발생하면 아래 전자우편주소를 통해 바로 문의해주세요.
           </Typography>
           <Box
             sx={{

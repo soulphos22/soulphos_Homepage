@@ -1,6 +1,8 @@
 import { Box, Typography, Button } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
+import COLOR from '../../assets/styles/colors';
+
 export default function FaqLink() {
   const navigate = useNavigate();
 
@@ -27,7 +29,16 @@ export default function FaqLink() {
         </Typography>
         <Button
           variant="outlined"
-          sx={{ marginTop: '1rem' }}
+          sx={{
+            width: '15rem',
+            height: '4rem',
+            fontSize: '1.2rem',
+            marginTop: '1rem',
+            '&:hover': {
+              backgroundColor: COLOR.blue,
+              color: COLOR.white,
+            },
+          }}
           onClick={() => navigate('/faq')}
         >
           자주 묻는 질문 바로가기

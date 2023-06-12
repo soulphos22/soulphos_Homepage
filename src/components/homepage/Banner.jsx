@@ -1,7 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 import { Box, Button, Typography } from '@mui/material';
 
-import backImg from '../../assets/images/backimg.png';
+import backImg from '../../assets/images/mainBG.jpeg';
+import backText from '../../assets/images/mainText.png';
 import COLOR from '../../assets/styles/colors';
 
 export default function Banner() {
@@ -10,16 +11,31 @@ export default function Banner() {
   return (
     <Box>
       <Box sx={backGorundImage}>
-        <Typography variant="h1">P I P S</Typography>
+        <Box
+          sx={{
+            width: '25rem',
+            height: '7rem',
+          }}
+        >
+          <img
+            src={backText}
+            alt="mainTextLogo"
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'none',
+            }}
+          />
+        </Box>
         <Typography variant="h4">
           Programmable IPC Performance & Sign
         </Typography>
         <Box>
           <Typography variant="h6">
-            간단한 소개 문구가 들어가는 자리 첫번째 줄
+            컴퓨터 성능진단을 구간가속부터 한계가속까지 원하는 대로
           </Typography>
           <Typography variant="h6">
-            간단한 소개 문구가 들어가는 자리 두번째 줄
+            설치 없이 사용 가능한 컴퓨터 벤치마크 도구
           </Typography>
         </Box>
         <Button
