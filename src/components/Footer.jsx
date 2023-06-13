@@ -22,7 +22,14 @@ export default function Footer() {
       <Typography variant="p" sx={{ fontWeight: '600', fontSize: '1rem' }}>
         (주) 솔포스
       </Typography>
-      <Typography variant="p">MAIL: TestEmail@gmail.com</Typography>
+      <Typography variant="p">
+        <a
+          href="mailto:soulphos22@gmail.com"
+          style={{ textDecoration: 'none', color: COLOR.white }}
+        >
+          soulphos22@gmail.com
+        </a>
+      </Typography>
       <Typography variant="p">
         COPYRIGHT ⓒ SOULPHOS COMPANY. ALL RIGHTS RESERVED.
       </Typography>

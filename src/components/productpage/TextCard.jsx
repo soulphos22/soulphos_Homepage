@@ -28,25 +28,30 @@ export default function TextCard({ prodcutObj }) {
         sx={{
           position: 'relative',
           '&:hover': {
-            backgroundColor: COLOR.blue,
-            '& img': {
-              opacity: 0.5,
-            },
+            ...(hoverText !== '' && {
+              backgroundColor: COLOR.blue,
+              '& img': {
+                opacity: 0.5,
+              },
+            }),
           },
         }}
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
       >
-        <CardMedia
-          sx={{
-            height: '250px',
-            paddingTop: '2%',
-            transition: 'all 0.3s ease',
-          }}
-          component="img"
-          image={image}
-          alt={imageText}
-        />
+        <Box sx={{ width: '375px', height: '250px' }}>
+          <CardMedia
+            sx={{
+              paddingTop: '2%',
+              transition: 'all 0.3s ease',
+              objectFit: 'contain',
+            }}
+            height={250}
+            component="img"
+            image={image}
+            alt={imageText}
+          />
+        </Box>
         {!isHovered ? (
           <Box
             sx={{
@@ -65,7 +70,7 @@ export default function TextCard({ prodcutObj }) {
                   color: 'rgba(0,0,0,.2)',
                 }}
               >
-                광고 프로그램 제거
+                {hoverText}
               </span>
             </Typography>
           </Box>

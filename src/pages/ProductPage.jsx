@@ -174,14 +174,14 @@ export default function ProductPage() {
             <Typography sx={{ fontSize: '1.7rem' }}>
               <strong>이메일 : </strong>
               <a
-                href="mailto:test123@gmail.com"
+                href="mailto:soulphos22@gmail.com"
                 style={{
                   color: '#000000',
                   fontSize: '1.7rem',
                   textDecoration: 'none',
                 }}
               >
-                test123@gmail.com
+                soulphos22@gmail.com
               </a>
             </Typography>
           </Box>

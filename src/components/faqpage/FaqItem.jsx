@@ -32,6 +32,7 @@ const AccordionSummary = styled((props) => (
   flexDirection: 'row-reverse',
   '&.Mui-expanded': {
     backgroundColor: COLOR.blue,
+    color: COLOR.white,
   },
   '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
     transform: 'rotate(90deg)',

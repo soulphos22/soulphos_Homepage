@@ -1,5 +1,4 @@
 import { Box, Divider, Typography } from '@mui/material';
-import testImage from '../assets/images/backimg.png';
 
 import COLOR from '../assets/styles/colors';
 
@@ -39,11 +38,11 @@ export default function AboutPage() {
             }}
           >
             <Typography sx={{ color: '#757575' }}>
-              멀웨어 제로 악성코드 제거 도구를 소개합니다.
+              솔포스는 인공지능의 위험성을 경고하고, 대처할 수 있는 방안을
+              제시합니다.
             </Typography>
             <Typography sx={{ color: '#757575' }}>
-              악성코드로 인해 고통 받지 않는 세상을 만들기 위해 꾸준히
-              노력하겠습니다.
+              언제나 열린 기업으로 여러분과 함께합니다.
             </Typography>
           </Box>
         </Box>
@@ -53,157 +52,195 @@ export default function AboutPage() {
             sx={{
               fontSize: '2.2rem',
               padding: '60px 0px 40px 0px',
-              fontWeight: 300,
+              fontWeight: 500,
             }}
           >
-            멀웨어 제로 ( Malware Zero )
+            <span style={{ color: COLOR.blue }}>AI</span>, 두려움의 대상에서
+            새로운 기회로, <span style={{ color: COLOR.blue }}>솔포스</span>와
+            함께
           </Typography>
-          <Box sx={{ width: '88%', pb: '30px' }}>
+          <Box sx={{ width: '100%', pb: '30px' }}>
             <Typography sx={{ fontSize: '1.125rem' }}>
-              <span style={{ color: '#ff3c00' }}>멀웨어 제로</span>는 사용자의
-              컴퓨터가 이미 악성코드에 감염되었을 때 유용하게 사용할 수 있는
-              비설치 스크립트 형식의 보조 악성코드 제거 도구입니다.
+              <span
+                style={{
+                  color: COLOR.blue,
+                  fontSize: '1.5rem',
+                  fontWeight: '500',
+                }}
+              >
+                솔포스
+              </span>
+              는 컴퓨터를 정확하게 진단하기 위해 다년간{' '}
+              <strong>컴퓨터 & 반도체 검증 솔루션</strong>을 개발하여
+              대응했습니다. 오늘 날에는 인간형 AI 시대의 도래에 대응하기 위한
+              방안을 개발하면서, 동시에 AI에게 예속되거나 자승자박의 위험을
+              경고했습니다. 솔포스는 이런 위험에 대처할 수 있는 방안을 우선
+              글로써 전달하고자 합니다.
             </Typography>
             <Divider
               sx={{
                 mt: 1,
-                '@media (max-width: 950px)': {
+                '@media -width: 950px)': {
                   display: 'none',
                 },
               }}
             />
           </Box>
+          <Box sx={{ textAlign: 'center', mb: 3 }}>
+            <span
+              style={{
+                color: '#1b3478',
+                fontWeight: 500,
+                fontSize: '1.4rem',
+              }}
+            >
+              AI는 기존의 컴퓨터와 무엇이 다른가요?
+            </span>
+          </Box>
           <Box>
             <Box sx={{ color: '#757575', lineHeight: 2 }}>
-              멀웨어 제로는 네이버 보안 카페{' '}
+              <strong style={{ color: COLOR.blue }}>
+                AI, 로봇, 드론, 자율주행 자동차
+              </strong>
+              는 인간과 유사한 상황 인지능력과 자율적 행동을 합니다. 그러나
+              행동방식은 인간과 상이하며 사고와 의식 또한 인간과는 괴리감이
+              있습니다. 그렇기에 우리에게 불편하고 위험한 상황을
+              자아냅니다.&nbsp;
               <span style={{ color: '#080', fontWeight: 700 }}>
-                「바이러스 제로 : 시큐리티 커뮤니티」
+                AI는 2진법 논리를 기반으로 지능
+              </span>
+              을 구성하기에 존재적 한계가 있습니다. 또한 타고나기를 인간과 달리
+              가족, 공동체, 관습, 윤리의 순화 과정을 거치지 않았기 때문입니다.
+              그럼에도 AI는 인간의 논리와 어법을 모방하는 것이기에 우리로서
+              대처하기에 어렵습니다.{' '}
+              <span style={{ color: COLOR.black, fontWeight: 700 }}>
+                <br />
+                <br />
+                그럼에도
               </span>{' '}
-              에서 서비스 되던{' '}
-              <span style={{ color: '#000000', fontWeight: 700 }}>
-                멀웨어 제로 킷(Malware Zero Kit, MZK)
+              AI가 수리, 논리, 사실 판단, 환경과 정황 판단 등의 지능적인 부분은
+              문명에 큰 기여를 하는 것은 사실입니다. 해당 분야에서는 인간 능력을
+              압도하기에 그 이용가치는 더없이 크다는 말이 자주 나옵니다.
+              <br />
+              <Divider sx={{ mt: 2 }} />
+              <br />
+            </Box>
+            <Box sx={{ color: '#757575', lineHeight: 2, mb: 2 }}>
+              <Box sx={{ textAlign: 'center', mb: 3 }}>
+                <span
+                  style={{
+                    color: '#1b3478',
+                    fontWeight: 500,
+                    fontSize: '1.4rem',
+                  }}
+                >
+                  솔포스는 AI 기술을 적절히 다루는 방안을 다음과 같이
+                  제시합니다.
+                </span>
+              </Box>
+              <span
+                style={{
+                  color: COLOR.black,
+                  fontSize: '1.25rem',
+                  fontWeight: 500,
+                }}
+              >
+                가동 에너지 판정법
               </span>{' '}
-              도구로, 사용자의 컴퓨터가 악성 광고 프로그램, 트로이 목마,
-              악의적인 해킹 도구, 일부 바이러스 등의 악성코드가 감염되거나
-              설치되어 피해를 입고 있을 때 사용하시는 안티바이러스 제품으로
-              해결되지 않을 경우 신속하고 효과적으로 사용할 수 있는 비설치
-              스크립트 형식의 커맨드 라인 기반 보조 악성코드 제거 도구입니다.
+              <br />
+              <span style={{ color: 'red' }}>위험</span>하다는 이유만으로
+              무조건적인 배척은 기술 발전의 한계를 가속할 뿐입니다. 솔포스는
+              가동 에너지 판정법으로 AI 컴퓨터의 존재를 문명에 조화시키는 방안을
+              제시합니다.
             </Box>
-            <Box sx={{ color: '#757575', lineHeight: 2, mt: 2 }}>
-              다만, 이 악성코드 제거 도구를 사용한다는 것은 이미 악성 프로그램이
-              설치된, 즉 '
-              <span style={{ color: '#000000', fontWeight: 700 }}>
-                사후약방문
+            <Box sx={{ color: '#757575', lineHeight: 2, mb: 2 }}>
+              <span
+                style={{
+                  color: COLOR.black,
+                  fontSize: '1.25rem',
+                  fontWeight: 500,
+                }}
+              >
+                한계가동률 인가 시뮬레이터
               </span>{' '}
-              (일을 그르친 뒤에 아무리 뉘우쳐야 이미 늦음)'을 뜻하는 것이므로,
-              최대한 도구가 사용되지 않도록 기본적인 보안 수칙을 지켜 악성코드
-              및 악성 프로그램이 쉽게 설치되지 않도록 사전 예방에 만전을
-              기해주시기를 당부드립니다.
+              <br />
+              <span style={{ color: 'green' }}>품질검증</span>은 모든 분야에
+              필수 요소입니다. 좋은 품질의 AI 컴퓨터는 월등한 성능을 보여줄
+              것입니다. 솔포스는 한계가동률 인가 시뮬레이터를 공급하여, AI
+              컴퓨터가 항상 최고의 성능을 발휘하도록 도움을 제시합니다.
             </Box>
-            <Box sx={{ color: '#757575', lineHeight: 2, mt: 2 }}>
-              본 도구는 공식 사이트 외 다른 사이트는 물론 카페, 블로그, 토렌트,
-              커뮤니티, 소셜 네트워크 등에서 파일 직접 배포를 포함하여 코드 변형
-              및 상업적 이용을 절대 금지합니다.
+            <Box sx={{ color: '#757575', lineHeight: 2 }}>
+              <span
+                style={{
+                  color: COLOR.black,
+                  fontSize: '1.25rem',
+                  fontWeight: 500,
+                }}
+              >
+                구간 가동률 조정기법
+              </span>{' '}
+              <br />
+              <span style={{ color: COLOR.blue }}>제조 공정, 유지보수</span>는
+              장치의 정상적인 기능에 큰 기여를 합니다. 솔포스는 구간 가동률
+              조정기법을 제공하여, AI 컴퓨터에 장착된 장치소자가 정상적인 기능을
+              유지하도록 도움을 제시합니다.
             </Box>
-          </Box>
-        </Box>
-      </Box>
-      <Box
-        sx={{
-          background: '#fafafa',
-          height: '',
-          display: 'flex',
-          justifyContent: 'center',
-          p: '40px 0px 40px 0px',
-          marginTop: '4rem',
-        }}
-      >
-        <Box
-          sx={{
-            maxWidth: '1200px',
-            display: 'grid',
-            gridTemplateColumns: 'repeat(3, 1fr)',
-            placeItems: 'center',
-            gap: 5,
-            '@media screen and (max-width: 1200px)': {
-              gridTemplateColumns: 'repeat(2, 1fr)',
-            },
-            '@media screen and (max-width: 950px)': {
-              gridTemplateColumns: 'repeat(1, 1fr)',
-            },
-          }}
-        >
-          <Box sx={{ textAlign: 'center' }}>
-            <img src={testImage} style={{ width: 350 }} alt="img" />
-            <Typography
-              sx={{ fontSize: '1.175rem', fontWeight: 400, mb: 2, mt: 1 }}
-            >
-              광고 프로그램 제거
-            </Typography>
-            <Typography sx={{ color: '#757575' }}>
-              사용자의 의도와는 관계 없이 무분별한 방식으로 광고 창을 띄우는
-              툴바를 포함한 악의적인 광고 프로그램을 효과적으로 제거합니다.
-            </Typography>
-          </Box>
-          <Box sx={{ textAlign: 'center' }}>
-            <img src={testImage} style={{ width: 350 }} alt="img" />
-            <Typography
-              sx={{ fontSize: '1.175rem', fontWeight: 400, mb: 2, mt: 1 }}
-            >
-              광고 프로그램 제거
-            </Typography>
-            <Typography sx={{ color: '#757575' }}>
-              사용자의 의도와는 관계 없이 무분별한 방식으로 광고 창을 띄우는
-              툴바를 포함한 악의적인 광고 프로그램을 효과적으로 제거합니다.
-            </Typography>
-          </Box>
-          <Box sx={{ textAlign: 'center' }}>
-            <img src={testImage} style={{ width: 350 }} alt="img" />
-            <Typography
-              sx={{ fontSize: '1.175rem', fontWeight: 400, mb: 2, mt: 1 }}
-            >
-              광고 프로그램 제거
-            </Typography>
-            <Typography sx={{ color: '#757575' }}>
-              사용자의 의도와는 관계 없이 무분별한 방식으로 광고 창을 띄우는
-              툴바를 포함한 악의적인 광고 프로그램을 효과적으로 제거합니다.
-            </Typography>
-          </Box>
-          <Box sx={{ textAlign: 'center' }}>
-            <img src={testImage} style={{ width: 350 }} alt="img" />
-            <Typography
-              sx={{ fontSize: '1.175rem', fontWeight: 400, mb: 2, mt: 1 }}
-            >
-              광고 프로그램 제거
-            </Typography>
-            <Typography sx={{ color: '#757575' }}>
-              사용자의 의도와는 관계 없이 무분별한 방식으로 광고 창을 띄우는
-              툴바를 포함한 악의적인 광고 프로그램을 효과적으로 제거합니다.
-            </Typography>
-          </Box>
-          <Box sx={{ textAlign: 'center' }}>
-            <img src={testImage} style={{ width: 350 }} alt="img" />
-            <Typography
-              sx={{ fontSize: '1.175rem', fontWeight: 400, mb: 2, mt: 1 }}
-            >
-              광고 프로그램 제거
-            </Typography>
-            <Typography sx={{ color: '#757575' }}>
-              사용자의 의도와는 관계 없이 무분별한 방식으로 광고 창을 띄우는
-              툴바를 포함한 악의적인 광고 프로그램을 효과적으로 제거합니다.
-            </Typography>
-          </Box>
-          <Box sx={{ textAlign: 'center' }}>
-            <img src={testImage} style={{ width: 350 }} alt="img" />
-            <Typography
-              sx={{ fontSize: '1.175rem', fontWeight: 400, mb: 2, mt: 1 }}
-            >
-              광고 프로그램 제거
-            </Typography>
-            <Typography sx={{ color: '#757575' }}>
-              사용자의 의도와는 관계 없이 무분별한 방식으로 광고 창을 띄우는
-              툴바를 포함한 악의적인 광고 프로그램을 효과적으로 제거합니다.
-            </Typography>
+            <Divider sx={{ mt: 2 }} />
+            <Box sx={{ color: '#757575', lineHeight: 2, mt: 5 }}>
+              <Box sx={{ textAlign: 'center', mb: 3 }}>
+                <span
+                  style={{
+                    color: '#1b3478',
+                    fontWeight: 500,
+                    fontSize: '1.4rem',
+                  }}
+                >
+                  컴퓨터를 사랑하는 모두에게 드리는 당부의 말씀
+                </span>
+              </Box>
+              <span>
+                <span
+                  style={{
+                    color: COLOR.blue,
+                    fontSize: '1.5rem',
+                    fontWeight: '500',
+                  }}
+                >
+                  솔포스
+                </span>
+                는 AI 세계가 무엇인지, 우리 사회에 AI가 주는 혜택은 무엇인지를
+                담백하게 담아보았습니다. 저희가 당부 드리고 싶은 것은 오직{' '}
+                <strong style={{ color: COLOR.blue }}>한 가지</strong> 입니다.
+              </span>
+              <br />
+              <Box sx={{ textAlign: 'center', mt: 2, mb: 2 }}>
+                <span
+                  style={{
+                    color: COLOR.black,
+                    fontWeight: 500,
+                    fontSize: '2rem',
+                  }}
+                >
+                  “컴퓨터를 이로운 기계로 사용하던 것에서{' '}
+                  <strong style={{ fontSize: '2.5rem', color: '#f89b00' }}>
+                    한 걸음
+                  </strong>{' '}
+                  더 나아가는 것”
+                </span>
+              </Box>
+              <span>
+                컴퓨터는 2진법 기계가 나름대로 생각과 판단을 하여 행동한다는
+                사실은 확실합니다. 이 능력만 볼 것이 아니라, 기계의 심성과 본성
+                그리고 물질적 행동양식을 늘 염두에 두면서 기계를 활용하는
+                것입니다. 솔포스는 AI 컴퓨터를 적절히 통제하고, 가동 에너지를
+                감시하여 우리 사회에 동반자로 조화시키는데 최선을 다하겠습니다.
+              </span>
+              <br />
+              <br />
+              <span style={{ color: COLOR.black, fontWeight: 500 }}>
+                솔포스 대표 김창선 올림
+              </span>
+            </Box>
           </Box>
         </Box>
       </Box>
@@ -219,11 +256,11 @@ export default function AboutPage() {
         }}
       >
         <Box>
-          <Typography sx={{ p: '30px 0px', fontWeight: 700, fontSize: '2rem' }}>
-            연락처
+          <Typography sx={{ fontWeight: 700, fontSize: '2rem', mb: 2 }}>
+            문의하기
           </Typography>
           <Typography sx={{ fontWeight: 400, fontSize: '1.125rem', mb: 4 }}>
-            궁금한 점이 있으신가요? 언제든지 연락주세요.
+            솔포스에 대한 문의사항이 있으시면 언제든지 연락주세요.
           </Typography>
           <Box
             sx={{
@@ -235,16 +272,16 @@ export default function AboutPage() {
             }}
           >
             <Typography sx={{ fontSize: '1.7rem' }}>
-              <strong>전화번호 : </strong>
+              <strong>이메일 : </strong>
               <a
-                href="tel:010-1234-5678"
+                href="mailto:soulphos22@gmail.com"
                 style={{
                   color: '#000000',
                   fontSize: '1.7rem',
                   textDecoration: 'none',
                 }}
               >
-                010-1234-5678
+                soulphos22@gmail.com
               </a>
             </Typography>
           </Box>

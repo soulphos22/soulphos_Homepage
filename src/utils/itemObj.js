@@ -7,7 +7,10 @@ import mainContent03 from '../assets/images/main_content_3.png';
 // FAQ Image Import
 
 // Product Image Import
-import backRemoveImage from '../assets/images/backimg_removebg.png';
+import productImage01 from '../assets/images/productImage01.png';
+import productImage02 from '../assets/images/productImage02.png';
+import productImage03 from '../assets/images/productImage03.png';
+import readyImage from '../assets/images/readyImage.png';
 
 export const itemObj = [
   {
@@ -74,7 +77,7 @@ export const productObj = [
     hoverSubText: '사용자의 의도와는 관계 없이 무분별한 방식으로',
     hoverSubText2: '광고를 띄우는 프로그램을 제거합니다.',
     hoverSubText3: '프로그램을 효과적으로 제거합니다.',
-    image: backRemoveImage,
+    image: productImage01,
   },
   {
     id: 2,
@@ -83,7 +86,7 @@ export const productObj = [
     hoverSubText: '사용자의 의도와는 관계 없이 무분별한 방식으로',
     hoverSubText2: '광고를 띄우는 프로그램을 제거합니다.',
     hoverSubText3: '프로그램을 효과적으로 제거합니다.',
-    image: backRemoveImage,
+    image: productImage02,
   },
   {
     id: 3,
@@ -92,33 +95,33 @@ export const productObj = [
     hoverSubText: '사용자의 의도와는 관계 없이 무분별한 방식으로',
     hoverSubText2: '광고를 띄우는 프로그램을 제거합니다.',
     hoverSubText3: '프로그램을 효과적으로 제거합니다.',
-    image: backRemoveImage,
+    image: productImage03,
   },
   {
     id: 4,
-    imageText: '광고 프로그램 제거',
-    hoverText: '광고 프로그램 제거',
-    hoverSubText: '사용자의 의도와는 관계 없이 무분별한 방식으로',
-    hoverSubText2: '광고를 띄우는 프로그램을 제거합니다.',
-    hoverSubText3: '프로그램을 효과적으로 제거합니다.',
-    image: backRemoveImage,
+    imageText: '',
+    hoverText: '',
+    hoverSubText: '',
+    hoverSubText2: '',
+    hoverSubText3: '',
+    image: readyImage,
   },
   {
     id: 5,
-    imageText: '광고 프로그램 제거',
-    hoverText: '광고 프로그램 제거',
-    hoverSubText: '사용자의 의도와는 관계 없이 무분별한 방식으로',
-    hoverSubText2: '광고를 띄우는 프로그램을 제거합니다.',
-    hoverSubText3: '프로그램을 효과적으로 제거합니다.',
-    image: backRemoveImage,
+    imageText: '',
+    hoverText: '',
+    hoverSubText: '',
+    hoverSubText2: '',
+    hoverSubText3: '',
+    image: readyImage,
   },
   {
     id: 6,
-    imageText: '광고 프로그램 제거',
-    hoverText: '광고 프로그램 제거',
-    hoverSubText: '사용자의 의도와는 관계 없이 무분별한 방식으로',
-    hoverSubText2: '광고를 띄우는 프로그램을 제거합니다.',
-    hoverSubText3: '프로그램을 효과적으로 제거합니다.',
-    image: backRemoveImage,
+    imageText: '',
+    hoverText: '',
+    hoverSubText: '',
+    hoverSubText2: '',
+    hoverSubText3: '',
+    image: readyImage,
   },
 ];

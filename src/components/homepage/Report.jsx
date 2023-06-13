@@ -35,10 +35,10 @@ export default function Report() {
           <Typography variant="h5" sx={{ fontWeight: 'lighter' }}>
             이메일:&nbsp;
             <a
-              href="mailto:test123@gmail.com"
+              href="mailto:soulphos22@gmail.com"
               style={{ textDecoration: 'none' }}
             >
-              TestEmail123@gmail.com
+              soulphos22@gmail.com
             </a>
           </Typography>
         </Box>
