@@ -1,5 +1,8 @@
 // Homepage Image Import
 import testImage from '../assets/images/backimg.png';
+import mainContent01 from '../assets/images/main_content_1.png';
+import mainContent02 from '../assets/images/main_content_2.png';
+import mainContent03 from '../assets/images/main_content_3.png';
 
 // FAQ Image Import
 
@@ -13,7 +16,7 @@ export const itemObj = [
     subText: '컴퓨터 벤치마크를 한번 하기위해 적잖은 시간을 할애하시나요?',
     subText2: '1분이면 끝납니다! PIPS는 스트레칭 시간동안 실행이 완료됩니다.',
     subText3: '귀하의 소중한 시간을 위해 저희는 계속 노력하고 있습니다.',
-    image: testImage,
+    image: mainContent01,
   },
   {
     id: 2,
@@ -24,7 +27,7 @@ export const itemObj = [
       'PIPS는 Windows의 백그라운드 리소스를 계산하여 자동으로 실행강도를 조절합니다.',
     subText3:
       '실제 사용 환경이나 앞으로 사용할 환경을 미리 파악하기위해 시뮬레이터처럼 사용하세요.',
-    image: testImage,
+    image: mainContent02,
   },
   {
     id: 3,
@@ -35,7 +38,7 @@ export const itemObj = [
       '그리고 이용률, 온도, 속도는 별도의 모니터링 프로그램을 사용하시지는 않나요?',
     subText3:
       'PIPS는 자동문입니다! 단 한번의 클릭으로 번거로운 작업없이 한번에 결과까지 확인하세요.',
-    image: testImage,
+    image: mainContent03,
   },
 ];
 
