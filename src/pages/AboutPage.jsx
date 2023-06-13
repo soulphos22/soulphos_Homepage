@@ -28,7 +28,7 @@ export default function AboutPage() {
               },
             }}
           >
-            소개
+            기업 소개
           </Typography>
           <Box
             sx={{

@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { Box, Button, Typography } from '@mui/material';
 
 import backImg from '../../assets/images/mainBG.jpeg';
-import backText from '../../assets/images/mainText.png';
+import backText from '../../assets/images/mainbanner.png';
 import COLOR from '../../assets/styles/colors';
 
 export default function Banner() {
@@ -20,11 +20,7 @@ export default function Banner() {
           <img
             src={backText}
             alt="mainTextLogo"
-            style={{
-              width: '100%',
-              height: '100%',
-              objectFit: 'none',
-            }}
+            style={{ width: '100%', height: '100%' }}
           />
         </Box>
         <Typography variant="h4">

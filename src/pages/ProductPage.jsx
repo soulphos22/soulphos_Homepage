@@ -35,7 +35,7 @@ export default function ProductPage() {
               },
             }}
           >
-            소개
+            제품 소개
           </Typography>
           <Box
             sx={{

@@ -30,7 +30,7 @@ export default function FaqLink() {
         <Button
           variant="outlined"
           sx={{
-            width: '15rem',
+            width: '16rem',
             height: '4rem',
             fontSize: '1.2rem',
             marginTop: '1rem',

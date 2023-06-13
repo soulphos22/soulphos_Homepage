@@ -27,7 +27,7 @@ export const itemObj = [
       'PIPS는 Windows의 백그라운드 리소스를 계산하여 자동으로 실행강도를 조절합니다.',
     subText3:
       '실제 사용 환경이나 앞으로 사용할 환경을 미리 파악하기위해 시뮬레이터처럼 사용하세요.',
-    image: mainContent02,
+    image: mainContent03,
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ export const itemObj = [
       '그리고 이용률, 온도, 속도는 별도의 모니터링 프로그램을 사용하시지는 않나요?',
     subText3:
       'PIPS는 자동문입니다! 단 한번의 클릭으로 번거로운 작업없이 한번에 결과까지 확인하세요.',
-    image: mainContent03,
+    image: mainContent02,
   },
 ];
 
