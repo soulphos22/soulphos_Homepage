@@ -46,11 +46,10 @@ export default function ProductPage() {
             }}
           >
             <Typography sx={{ color: '#757575' }}>
-              멀웨어 제로 악성코드 제거 도구를 소개합니다.
+              PIPS 컴퓨터 성능진단 벤치마크 도구를 소개합니다.
             </Typography>
             <Typography sx={{ color: '#757575' }}>
-              악성코드로 인해 고통 받지 않는 세상을 만들기 위해 꾸준히
-              노력하겠습니다.
+              누구나 쉽고 빠르게 컴퓨터를 알 수 있는 날까지 노력하겠습니다.
             </Typography>
           </Box>
         </Box>
@@ -58,22 +57,23 @@ export default function ProductPage() {
         <Box sx={{ width: '100%' }}>
           <Typography
             sx={{
-              fontSize: '2.2rem',
+              fontSize: '2.4rem',
               padding: '60px 0px 40px 0px',
-              fontWeight: 300,
+              fontWeight: 400,
             }}
           >
-            멀웨어 제로 ( Malware Zero )
+            <span style={{ color: COLOR.blue }}>P I P S</span> ( Programmable
+            IPC Performance & Sign )
           </Typography>
           <Box sx={{ width: '88%', pb: '30px' }}>
             <Typography sx={{ fontSize: '1.125rem' }}>
-              <span style={{ color: '#ff3c00' }}>멀웨어 제로</span>는 사용자의
-              컴퓨터가 이미 악성코드에 감염되었을 때 유용하게 사용할 수 있는
-              비설치 스크립트 형식의 보조 악성코드 제거 도구입니다.
+              <span style={{ color: COLOR.blue }}>PIPS</span>는 사용자의
+              컴퓨터를 간결하고 빠르게 진단하는 도구로써 컴퓨터의 CPU와 메모리의
+              연산력을 측정하는 벤치마크 어플리케이션의 하나입니다.
             </Typography>
             <Divider
               sx={{
-                mt: 1,
+                mt: 2,
                 '@media (max-width: 950px)': {
                   display: 'none',
                 },
@@ -82,37 +82,85 @@ export default function ProductPage() {
           </Box>
           <Box>
             <Box sx={{ color: '#757575', lineHeight: 2 }}>
-              멀웨어 제로는 네이버 보안 카페{' '}
+              <span style={{ color: COLOR.blue }}>PIPS</span>의 적용 대상은{' '}
               <span style={{ color: '#080', fontWeight: 700 }}>
-                「바이러스 제로 : 시큐리티 커뮤니티」
+                개인 컴퓨터(Personal Computer, PC)입니다.
               </span>{' '}
-              에서 서비스 되던{' '}
-              <span style={{ color: '#000000', fontWeight: 700 }}>
-                멀웨어 제로 킷(Malware Zero Kit, MZK)
-              </span>{' '}
-              도구로, 사용자의 컴퓨터가 악성 광고 프로그램, 트로이 목마,
-              악의적인 해킹 도구, 일부 바이러스 등의 악성코드가 감염되거나
-              설치되어 피해를 입고 있을 때 사용하시는 안티바이러스 제품으로
-              해결되지 않을 경우 신속하고 효과적으로 사용할 수 있는 비설치
-              스크립트 형식의 커맨드 라인 기반 보조 악성코드 제거 도구입니다.
+              현재는 Intel 계열과 AMD 계열의 프로세서를 채용한 컴퓨터를 대상으로
+              하며, 보다 높은 등급 혹은 모바일 부문 CPU는 지원하지 않습니다.{' '}
+            </Box>
+            <Box sx={{ color: '#757575', lineHeight: 2.5, mt: 2 }}>
+              <Box sx={{ textAlign: 'center' }}>
+                <span
+                  style={{
+                    fontSize: '2rem',
+                    fontWeight: 500,
+                    color: COLOR.black,
+                  }}
+                >
+                  PIPS-Freeware 사용방법
+                </span>
+              </Box>
+              <span style={{ color: '#f89b00' }}>PIPS-Freeware</span>는 사용자가
+              번거로운 과정 없이 컴퓨터를 진단하기 용이하도록 비-설치 사용자
+              실행 형식의 벤치마크 도구입니다. 사용방법은 다음과 같습니다.
+              <Box sx={{ marginLeft: '2rem' }}>
+                <strong>1.</strong> 다운로드 받은 압축파일을 적당한 폴더에
+                저장하세요. <br />
+                <strong>2.</strong> 압축을 해제한 후 PIPS.exe 파일을 실행하세요.{' '}
+                <br />
+                <strong>3.</strong> 프로그램 상단에 있는 Benchmark를 클릭하세요.{' '}
+                <br />
+                <strong>4.</strong> 1분 정도의 시간이 경과하면, 같은 폴더에
+                CVS파일이 생성됩니다.
+                <br />
+                <strong>5.</strong> 프로그램을 종료하세요. <br />
+              </Box>
             </Box>
             <Box sx={{ color: '#757575', lineHeight: 2, mt: 2 }}>
-              다만, 이 악성코드 제거 도구를 사용한다는 것은 이미 악성 프로그램이
-              설치된, 즉 '
-              <span style={{ color: '#000000', fontWeight: 700 }}>
-                사후약방문
-              </span>{' '}
-              (일을 그르친 뒤에 아무리 뉘우쳐야 이미 늦음)'을 뜻하는 것이므로,
-              최대한 도구가 사용되지 않도록 기본적인 보안 수칙을 지켜 악성코드
-              및 악성 프로그램이 쉽게 설치되지 않도록 사전 예방에 만전을
-              기해주시기를 당부드립니다.
-            </Box>
-            <Box sx={{ color: '#757575', lineHeight: 2, mt: 2 }}>
-              본 도구는 공식 사이트 외 다른 사이트는 물론 카페, 블로그, 토렌트,
-              커뮤니티, 소셜 네트워크 등에서 파일 직접 배포를 포함하여 코드 변형
-              및 상업적 이용을 절대 금지합니다.
+              현재 버전의 결과는 CVS파일을 통해 확인할 수 있습니다. 총 5개의
+              숫자로 구분되어 있으며, 왼쪽부터{' '}
+              <strong style={{ color: COLOR.black }}>
+                CPU속도, CPU온도, CPU이용률, 연산 명령어 수, 구간 가속 후 연산
+                명령어 증가분입니다.
+              </strong>{' '}
+              제세한 사항은 자주 묻는 질문을 참고해주세요.
             </Box>
           </Box>
+          <Divider sx={{ mt: 3 }} />
+          <Box sx={{ color: '#757575', lineHeight: 2, mt: 2 }}>
+            <Box sx={{ textAlign: 'center' }}>
+              <span
+                style={{
+                  fontSize: '2rem',
+                  fontWeight: 500,
+                  color: COLOR.black,
+                }}
+              >
+                PIPS-Freeware 기술정보
+              </span>
+            </Box>
+            <Box sx={{ mt: 2 }}>
+              <span style={{ color: '#f89b00' }}>PIPS-Freeware</span> 버전은
+              여러분의 컴퓨터의 연산능력을 측정하는 것을 목적으로 합니다. 컴퓨터
+              성능에는 그래픽 생산력, 병렬데이터 처리능력 등의 다양한 종류가
+              있지만, 해당 버전은 컴퓨터의{' '}
+              <strong style={{ color: COLOR.black }}>
+                정수 연산, 부동소수점 연산, 해시코드 디코딩 연산능력
+              </strong>{' '}
+              측정을 합니다. 이를 위해 클럭당 명령어 처리 횟수 (Instructions per
+              clock, IPC) 기법을 사용하며, 세계 표준 벤치마크 SPEC 기법을 응용한
+              알고리즘이 적용되었습니다.
+            </Box>
+            <Box sx={{ mt: 2 }}>
+              <span style={{ color: '#f89b00' }}>PIPS-Freeware</span>의 결과는
+              코어 수효만큼 연산 스레드를 가동했을 때, 중앙 명령어 횟수를 클럭에
+              맞춰 산출됩니다. 이는 CPU의 상대 평가를 의미하는 것으로 다른
+              벤치마크 결과와 수평적 비교가{' '}
+              <span style={{ color: 'red' }}>불가능</span>합니다.
+            </Box>
+          </Box>
+          <Divider sx={{ mt: 3 }} />
         </Box>
       </Box>
       <Box

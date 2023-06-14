@@ -1,15 +1,12 @@
 // Homepage Image Import
-import testImage from '../assets/images/backimg.png';
 import mainContent01 from '../assets/images/main_content_1.png';
 import mainContent02 from '../assets/images/main_content_2.png';
 import mainContent03 from '../assets/images/main_content_3.png';
 
-// FAQ Image Import
-
 // Product Image Import
 import productImage01 from '../assets/images/productImage01.png';
-import productImage02 from '../assets/images/productImage02.png';
-import productImage03 from '../assets/images/productImage03.png';
+import productImage04 from '../assets/images/productImage04.png';
+import productImage05 from '../assets/images/productImage05.png';
 import readyImage from '../assets/images/readyImage.png';
 
 export const itemObj = [
@@ -58,7 +55,7 @@ export const faqObj = [
     question: 'Q. 문제가 해결되지 않으셨나요?',
     answer:
       '문제가 해결되지 않으셨다면 고객센터로 문의해주세요. 고객센터는 24시간 운영되며, 최대한 빠르게 답변해드리겠습니다.',
-    image: testImage,
+    image: '',
   },
   {
     panelId: 'panel3',
@@ -72,30 +69,30 @@ export const faqObj = [
 export const productObj = [
   {
     id: 1,
-    imageText: '광고 프로그램 제거',
-    hoverText: '광고 프로그램 제거',
-    hoverSubText: '사용자의 의도와는 관계 없이 무분별한 방식으로',
-    hoverSubText2: '광고를 띄우는 프로그램을 제거합니다.',
-    hoverSubText3: '프로그램을 효과적으로 제거합니다.',
-    image: productImage01,
+    imageText: '다양한 적용범위',
+    hoverText: '다양한 적용범위',
+    hoverSubText: '본질이 컴퓨터인 모든 개체에 필요합니다.',
+    hoverSubText2: 'AI, 로봇, 자율주행 자동차, 드론 등',
+    hoverSubText3: 'PIPS의 적용범위는 엄청납니다.',
+    image: productImage05,
   },
   {
     id: 2,
-    imageText: '광고 프로그램 제거',
-    hoverText: '광고 프로그램 제거',
-    hoverSubText: '사용자의 의도와는 관계 없이 무분별한 방식으로',
-    hoverSubText2: '광고를 띄우는 프로그램을 제거합니다.',
-    hoverSubText3: '프로그램을 효과적으로 제거합니다.',
-    image: productImage02,
+    imageText: '컴퓨터 바이탈',
+    hoverText: '컴퓨터 바이탈',
+    hoverSubText: '인간의 체온, 맥박, 호흡, 혈압과 같이',
+    hoverSubText2: '이용률, 온도, 속도 등의 컴퓨터 바이탈을',
+    hoverSubText3: 'PIPS로 한 번에 확인하세요.',
+    image: productImage04,
   },
   {
     id: 3,
-    imageText: '광고 프로그램 제거',
-    hoverText: '광고 프로그램 제거',
-    hoverSubText: '사용자의 의도와는 관계 없이 무분별한 방식으로',
-    hoverSubText2: '광고를 띄우는 프로그램을 제거합니다.',
-    hoverSubText3: '프로그램을 효과적으로 제거합니다.',
-    image: productImage03,
+    imageText: '단계별 구간가속',
+    hoverText: '단계별 구간가속',
+    hoverSubText: '최대가속만으로는 한계가 있습니다.',
+    hoverSubText2: '구간별 성능진단으로 컴퓨터를 정확하게',
+    hoverSubText3: 'PIPS를 시뮬레이터처럼 사용하세요.',
+    image: productImage01,
   },
   {
     id: 4,

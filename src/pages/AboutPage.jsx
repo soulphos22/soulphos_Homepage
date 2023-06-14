@@ -79,7 +79,7 @@ export default function AboutPage() {
             </Typography>
             <Divider
               sx={{
-                mt: 1,
+                mt: 3,
                 '@media -width: 950px)': {
                   display: 'none',
                 },
