@@ -27,7 +27,7 @@ export default function DownloadBody({ count }) {
         <CheckBoxIcon sx={{ fontSize: '5rem', color: '#4caf50' }} />
       )}
       <Typography variant="p" sx={{ fontWeight: 'lighter' }}>
-        악성 항목이 제거되지 않을 경우 악성코드 분석 요청 페이지를 참고해주세요.
+        프로그램이 동작하지 않을 경우 문의메일로 연락해주세요.
       </Typography>
       <Typography variant="p" sx={{ fontWeight: 'lighter' }}>
         브라우저 보안 설정에 의해 파일 내려받기가 차단될 경우 자주 묻는 질문
