@@ -191,6 +191,7 @@ export default function ProductPage() {
           ))}
         </Box>
       </Box>
+      <Divider sx={{ mt: 3 }} />
       <Box
         sx={{
           width: '1200px',

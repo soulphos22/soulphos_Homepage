@@ -243,12 +243,12 @@ export default function AboutPage() {
             </Box>
           </Box>
         </Box>
+        <Divider sx={{ mt: 3 }} />
       </Box>
       <Box
         sx={{
           maxWidth: '1200px',
           margin: '0 auto',
-          paddingTop: '3rem',
           height: '400px',
           display: 'flex',
           justifyContent: 'space-between',

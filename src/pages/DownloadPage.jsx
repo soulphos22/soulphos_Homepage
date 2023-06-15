@@ -26,8 +26,8 @@ export default function DownloadPage() {
   }, [count]);
 
   const downloadFile = () => {
-    const fileName = 'download.zip';
-    const fileUrl = require('../assets/test.zip');
+    const fileName = 'pips_fw_v3_4.zip';
+    const fileUrl = require('../assets/pips_fw_v3_4.zip');
 
     fetch(fileUrl)
       .then((response) => {
