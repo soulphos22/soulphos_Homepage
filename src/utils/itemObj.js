@@ -7,7 +7,6 @@ import mainContent03 from '../assets/images/main_content_3.png';
 import productImage01 from '../assets/images/productImage01.png';
 import productImage04 from '../assets/images/productImage04.png';
 import productImage05 from '../assets/images/productImage05.png';
-import readyImage from '../assets/images/readyImage.png';
 
 export const itemObj = [
   {
@@ -93,32 +92,5 @@ export const productObj = [
     hoverSubText2: '구간별 성능진단으로 컴퓨터를 정확하게',
     hoverSubText3: 'PIPS를 시뮬레이터처럼 사용하세요.',
     image: productImage01,
-  },
-  {
-    id: 4,
-    imageText: '',
-    hoverText: '',
-    hoverSubText: '',
-    hoverSubText2: '',
-    hoverSubText3: '',
-    image: readyImage,
-  },
-  {
-    id: 5,
-    imageText: '',
-    hoverText: '',
-    hoverSubText: '',
-    hoverSubText2: '',
-    hoverSubText3: '',
-    image: readyImage,
-  },
-  {
-    id: 6,
-    imageText: '',
-    hoverText: '',
-    hoverSubText: '',
-    hoverSubText2: '',
-    hoverSubText3: '',
-    image: readyImage,
   },
 ];

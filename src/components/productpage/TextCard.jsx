@@ -52,29 +52,7 @@ export default function TextCard({ prodcutObj }) {
             alt={imageText}
           />
         </Box>
-        {!isHovered ? (
-          <Box
-            sx={{
-              position: 'absolute',
-              color: COLOR.black,
-              top: '50%',
-              left: '50%',
-              transform: 'translateX(-50%)',
-            }}
-          >
-            <Typography>
-              <span
-                style={{
-                  fontSize: '1.5rem',
-                  fontWeight: 500,
-                  color: 'rgba(0,0,0,.2)',
-                }}
-              >
-                {hoverText}
-              </span>
-            </Typography>
-          </Box>
-        ) : (
+        {isHovered && (
           <Box
             sx={{
               position: 'absolute',

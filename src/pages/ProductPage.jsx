@@ -55,17 +55,15 @@ export default function ProductPage() {
         </Box>
         <Divider />
         <Box sx={{ width: '100%' }}>
-          <Typography
-            sx={{
-              fontSize: '2.4rem',
-              padding: '60px 0px 40px 0px',
-              fontWeight: 400,
-            }}
-          >
-            <span style={{ color: COLOR.blue }}>P I P S</span> ( Programmable
-            IPC Performance & Sign )
+          <Typography sx={{ padding: '60px 0px 40px 0px', fontWeight: 400 }}>
+            <span style={{ color: COLOR.blue, fontSize: '2.4rem' }}>
+              P I P S
+            </span>{' '}
+            <span style={{ fontSize: '1.5rem', color: '#757575' }}>
+              ( Programmable IPC Performance & Sign )
+            </span>
           </Typography>
-          <Box sx={{ width: '88%', pb: '30px' }}>
+          <Box sx={{ width: '100%', pb: '30px' }}>
             <Typography sx={{ fontSize: '1.125rem' }}>
               <span style={{ color: COLOR.blue }}>PIPS</span>는 사용자의
               컴퓨터를 간결하고 빠르게 진단하는 도구로써 컴퓨터의 CPU와 메모리의
