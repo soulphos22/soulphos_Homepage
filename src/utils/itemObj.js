@@ -13,6 +13,7 @@ import faqContent01 from '../assets/images/faqcontent01.png';
 import faqContent02 from '../assets/images/faqcontent02.png';
 import faqContent03 from '../assets/images/faqcontent03.png';
 import faqContent04 from '../assets/images/faqcontent04.png';
+import faqContent05 from '../assets/images/faqcontent05.png';
 
 export const itemObj = [
   {
@@ -56,32 +57,40 @@ export const faqObj = [
   },
   {
     panelId: 'panel2',
+    question: 'Q. 다운로드가 차단됩니다.',
+    answer: `브라우저 보안으로 인해 다운로드가 차단되는 경우가 발생할 경우, 아래 이미지와 같이 조치하시면 정상적으로 다운로드가 가능합니다. (Google Chrome기준)
+
+    다운로드 파일은 내부에 실행 파일(exe)를 포함하고 있기 때문에 해당 이슈가 발생할 수 있습니다.`,
+    image: faqContent05,
+  },
+  {
+    panelId: 'panel3',
     question: 'Q. 중간에 프로그램을 종료해도 되나요?',
     answer:
       '네 중간에 프로그램을 종료하셔도 문제없습니다. 종료 이후 모든 작업이 바로 가능합니다.',
     image: '',
   },
   {
-    panelId: 'panel3',
+    panelId: 'panel4',
     question: 'Q. 언제 프로그램을 종료하면 되나요?',
     answer:
       'PIPS가 실행되고 약 3분 후 같은 폴더에 CVS파일이 생성되며 실행이 멈춥니다. 파일 생성을 확인하시고, 프로그램을 종료하시면 됩니다.',
     image: faqContent02,
   },
   {
-    panelId: 'panel4',
+    panelId: 'panel5',
     question: 'Q. CVS파일을 확인하고 싶어요.',
     answer: '',
     image: faqContent03,
   },
   {
-    panelId: 'panel5',
+    panelId: 'panel6',
     question: 'Q. CVS파일의 내용이 무엇인가요?',
     answer: '',
     image: faqContent04,
   },
   {
-    panelId: 'panel6',
+    panelId: 'panel7',
     question: 'Q. 윈도우 작업관리자의 CPU이용률과 PIPS의 CPU이용률이 달라요.',
     answer: `PIPS 컴퓨터 성능진단 도구는 본격적인 실행 전에 백그라운드 리소스를 계산하여 연산 투입량을 결정합니다. 해당 투입량을 기준으로 사용할 CPU코어 개수를 결정합니다. 결정된 코어 개수에 연산을 투입하여 성능진단을 합니다.
       
@@ -91,7 +100,7 @@ export const faqObj = [
     image: '',
   },
   {
-    panelId: 'panel7',
+    panelId: 'panel8',
     question: 'Q. 스마트폰에서는 사용할 수 없나요?',
     answer: `네. 사용할 수 없습니다. 아쉽게도 현재 PIPS 컴퓨터 성능진단 도구는 PC에서 동작하도록 설계되어 있습니다.
     스마트폰에서 동작하도록 개발이 된다면, 공지하도록 하겠습니다.
