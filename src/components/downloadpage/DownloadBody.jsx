@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import CheckBoxIcon from '@mui/icons-material/CheckBox';
-
+import { Link } from 'react-router-dom';
 import downspinner from '../../assets/videos/downspinner.gif';
 
 export default function DownloadBody({ count }) {
@@ -26,11 +26,14 @@ export default function DownloadBody({ count }) {
       ) : (
         <CheckBoxIcon sx={{ fontSize: '5rem', color: '#4caf50' }} />
       )}
-      <Typography variant="p" sx={{ fontWeight: 'lighter' }}>
+      <Typography variant="p" sx={{ fontWeight: '400' }}>
         프로그램이 동작하지 않을 경우 문의메일로 연락해주세요.
       </Typography>
-      <Typography variant="p" sx={{ fontWeight: 'lighter' }}>
-        브라우저 보안 설정에 의해 파일 내려받기가 차단될 경우 자주 묻는 질문
+      <Typography variant="p" sx={{ fontWeight: '400' }}>
+        브라우저 보안 설정에 의해 파일 내려받기가 차단될 경우
+        <Typography variant="p" sx={{ fontWeight: '400' }}>
+          <Link to="/faq">자주 묻는 질문</Link>
+        </Typography>
         내용을 참고해주세요.
       </Typography>
     </Box>
