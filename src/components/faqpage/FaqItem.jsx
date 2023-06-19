@@ -66,7 +66,14 @@ export default function FaqItem({
       </AccordionSummary>
       <AccordionDetails>
         <Typography variant="p" sx={{ fontSize: '1rem' }}>
-          {answer}
+          {answer.split('\n').map((line, index) => {
+            return (
+              <span key={index}>
+                {line}
+                <br />
+              </span>
+            );
+          })}
         </Typography>
         {image && (
           <img
