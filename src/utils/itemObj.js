@@ -8,6 +8,12 @@ import productImage01 from '../assets/images/productImage01.png';
 import productImage04 from '../assets/images/productImage04.png';
 import productImage05 from '../assets/images/productImage05.png';
 
+// FAQ Image Import
+import faqContent01 from '../assets/images/faqcontent01.png';
+import faqContent02 from '../assets/images/faqcontent02.png';
+import faqContent03 from '../assets/images/faqcontent03.png';
+import faqContent04 from '../assets/images/faqcontent04.png';
+
 export const itemObj = [
   {
     id: 1,
@@ -44,23 +50,53 @@ export const itemObj = [
 export const faqObj = [
   {
     panelId: 'panel1',
-    question: 'Q. 문제가 발생했거나 궁금한 점이 있으신가요?',
-    answer:
-      "예기치 않은 문제가 발생했거나 다른 궁금한 점이 있으시면 '자주 묻는 질문' 페이지를 방문해 내용을 확인해주세요.",
-    image: '',
+    question: 'Q. PIPS 컴퓨터 성능진단 도구를 사용하는 방법을 알려주세요.',
+    answer: '',
+    image: faqContent01,
   },
   {
     panelId: 'panel2',
-    question: 'Q. 문제가 해결되지 않으셨나요?',
+    question: 'Q. 중간에 프로그램을 종료해도 되나요?',
     answer:
-      '문제가 해결되지 않으셨다면 고객센터로 문의해주세요. 고객센터는 24시간 운영되며, 최대한 빠르게 답변해드리겠습니다.',
+      '네 중간에 프로그램을 종료하셔도 문제없습니다. 종료 이후 모든 작업이 바로 가능합니다.',
     image: '',
   },
   {
     panelId: 'panel3',
-    question: 'Q. 멀웨어 제로를 사용해주셔서 감사합니다.',
+    question: 'Q. 언제 프로그램을 종료하면 되나요?',
     answer:
-      '멀웨어 제로를 사용해주셔서 감사합니다. 멀웨어 제로는 사용자의 편의를 위해 노력하고 있습니다.',
+      'PIPS가 실행되고 약 3분 후 같은 폴더에 CVS파일이 생성되며 실행이 멈춥니다. 파일 생성을 확인하시고, 프로그램을 종료하시면 됩니다.',
+    image: faqContent02,
+  },
+  {
+    panelId: 'panel4',
+    question: 'Q. CVS파일을 확인하고 싶어요.',
+    answer: '',
+    image: faqContent03,
+  },
+  {
+    panelId: 'panel5',
+    question: 'Q. CVS파일의 내용이 무엇인가요?',
+    answer: '',
+    image: faqContent04,
+  },
+  {
+    panelId: 'panel6',
+    question: 'Q. 윈도우 작업관리자의 CPU이용률과 PIPS의 CPU이용률이 달라요.',
+    answer: `PIPS 컴퓨터 성능진단 도구는 본격적인 실행 전에 백그라운드 리소스를 계산하여 연산 투입량을 결정합니다. 해당 투입량을 기준으로 사용할 CPU코어 개수를 결정합니다. 결정된 코어 개수에 연산을 투입하여 성능진단을 합니다.
+      
+    그렇기에 PIPS는 현재 연산을 투입한 코어에 대한 이용률이 나타나며, Windows 작업 관리자의 경우 모든 CPU코어에 대한 이용률을 나타냅니다.
+      
+    따라서 두 이용률은 수평적인 비교가 불가능합니다.`,
+    image: '',
+  },
+  {
+    panelId: 'panel7',
+    question: 'Q. 스마트폰에서는 사용할 수 없나요?',
+    answer: `네. 사용할 수 없습니다. 아쉽게도 현재 PIPS 컴퓨터 성능진단 도구는 PC에서 동작하도록 설계되어 있습니다.
+    스마트폰에서 동작하도록 개발이 된다면, 공지하도록 하겠습니다.
+    
+    감사합니다.`,
     image: '',
   },
 ];
